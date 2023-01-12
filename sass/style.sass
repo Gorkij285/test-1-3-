@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap')
+@import "base/_base.sass"
+@import "base/_animation.sass"   
+@import "base/_blocks.sass"
+
+@import "components/_button.sass"
+@import "components/_comp.sass"  
+
+
+
+@media (min-width: 320px)
+    .btn-menu-768
+        display: none
+    .header
+        &__divider-768
+            display: none
+@media (min-width: 500px)
+    .header
+        &__divider-320
+            display: none
+        &__divider-768
+            display: inline-block
+        &__divider-right
+            display: inline-block
+
+    .btn-menu-768
+        display: inline-block   
+    .main
+        &__list-menu
+            padding-left: 26px
+        &__img
+            width: 95%
+            object-fit: contain
+            min-height: 500px
+        &__text
+            width: 100%
+        &__pos-text-img
+            display: flex
+            flex-direction: row
+            height: 500px
+            padding-left: 12px
+        &__left
+            width: 50%
+        &__right
+            width: 50%
+@media  (min-width: 768px)
+    .header
+        &__burger
+            margin-right: 20px
+        &__divider-768
+            margin-right: 25px 
+    .main__text_768
+        display: inline-block
+    
+    
+@media (min-width: 1120px)
+    .header
+        background-color: #F6F6F6
+        height: 18px
+        overflow: visible
+        &__pos-left
+            display: none
+        &__divider-right
+            display: none
+        &__checkstatus 
+            img
+                margin-right: 10px
+        &__checkstatus 
+            p
+                display: inline
+    
+    .header
+        p
+            display: inline-block
+        img
+            background-color: #F6F6F6 
+            margin-right: 10px
+
+            
+    .btn-menu
+        background-color: #F6F6F6 
+    .btn-menu-768 
+        display: none  
+
+    .main           
+        &__list-menu 
+            display: flex
+            margin-bottom: 27px
+            padding-left: 36px
+            flex-wrap: wrap
+            margin-bottom: 10px
+            span
+                font-size: 15.5px
+        &__list-menu_1120
+            display: inline-block
+            margin-bottom: 15px
+        &__pos-text-img
+            padding-left: 24px
+        &__text_1120
+            display: inline-block
+        &__text_768
+            display: none
